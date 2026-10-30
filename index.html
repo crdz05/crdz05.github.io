@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Diego Corrales</title>
+<meta name="description" content="Diego Corrales, Computer Engineering student at USF seeking Summer 2027 internships in software engineering, embedded/firmware, mobile, and ML/computer vision.">
+<style>
+:root {
+  --bg: #ffffff;
+  --surface: #f5f6f8;
+  --text: #16181d;
+  --muted: #565d6b;
+  --border: #dfe2e8;
+  --accent: #0b6b4f;
+  --accent-text: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1115;
+    --surface: #181b21;
+    --text: #eceef2;
+    --muted: #a3a9b6;
+    --border: #2a2f39;
+    --accent: #4cc9a0;
+    --accent-text: #08130f;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+a { color: var(--accent); }
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+nav {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+nav .wrap { display: flex; gap: 18px; overflow-x: auto; padding-top: 12px; padding-bottom: 12px; white-space: nowrap; }
+nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+nav a:hover, nav a:focus { color: var(--text); }
+header.hero { padding: 56px 0 40px; }
+.hero h1 { font-size: clamp(2rem, 8vw, 3rem); line-height: 1.15; margin: 0 0 8px; }
+.hero .title { font-size: clamp(1.05rem, 4vw, 1.25rem); color: var(--muted); margin: 0 0 12px; }
+.hero .seeking { margin: 0 0 24px; }
+.buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn {
+  display: inline-block; padding: 12px 18px; border-radius: 8px;
+  border: 1px solid var(--accent); text-decoration: none; font-weight: 600;
+  color: var(--accent); background: transparent; min-height: 44px;
+}
+.btn.primary { background: var(--accent); color: var(--accent-text); }
+section { padding: 36px 0; border-top: 1px solid var(--border); }
+section h2 { font-size: 1.5rem; margin: 0 0 16px; }
+.cards { display: grid; gap: 16px; }
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 10px; padding: 18px;
+}
+.card h3 { margin: 0 0 2px; font-size: 1.15rem; }
+.meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 12px; }
+.card dl { margin: 0; }
+.card dt { font-weight: 600; margin-top: 10px; }
+.card dd { margin: 2px 0 0; }
+.card ul, .entry ul { margin: 8px 0 0; padding-left: 20px; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 0; padding: 0; list-style: none; }
+.tags li {
+  border: 1px solid var(--border); border-radius: 999px;
+  padding: 2px 10px; font-size: 0.85rem; background: var(--bg);
+}
+.entry { margin-bottom: 22px; }
+.entry h3 { margin: 0; font-size: 1.1rem; }
+.skills { display: grid; gap: 14px; }
+.skills h3 { margin: 0 0 6px; font-size: 1rem; }
+footer { padding: 28px 0 40px; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--border); }
+@media (min-width: 700px) {
+  .cards.two { grid-template-columns: 1fr 1fr; }
+  .skills { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Sections">
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+<header class="hero">
+  <div class="wrap">
+    <h1>Diego Corrales</h1>
+    <p class="title">Computer Engineering Student, USF, Dec 2027</p>
+    <p class="seeking">Seeking Summer 2027 internships in software engineering, embedded/firmware, mobile, and ML/computer vision.</p>
+    <div class="buttons">
+      <a class="btn primary" href="resume.pdf">Resume PDF</a>
+      <a class="btn" href="https://www.linkedin.com/in/diegojcorrales/">LinkedIn</a>
+      <a class="btn" href="mailto:corralesdiego05@gmail.com">Email</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>I am a Computer Engineering student at the University of South Florida in Tampa, from Panama. My GPA is 3.77/4.0, and I am fluent in both English and Spanish.</p>
+    <p>My project work is in computer vision and data: a YOLOv8-based prototype for an ocean-cleanup robot, an image classifier with a Streamlit interface, and a data pipeline in Databricks. I am looking for Summer 2027 internships where I can keep building.</p>
+    <p><strong>Certifications:</strong> Samsung Innovation Campus Artificial Intelligence Program (200 hours); AWS Academy Graduate, Machine Learning for Natural Language Processing.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="cards">
+
+      <article class="card">
+        <h3>Ocean Guardian</h3>
+        <p class="meta">HackUSF, University of South Florida, Mar 2026. Team of 2.</p>
+        <dl>
+          <dt>Problem</dt>
+          <dd>An ocean-cleanup robot should not harm wildlife while collecting trash.</dd>
+          <dt>What I did</dt>
+          <dd>
+            <ul>
+              <li>Co-developed an ecosystem-aware computer-vision prototype and directed the implementation of a real-time YOLOv8 detection pipeline. The demo uses COCO classes as proxies for marine life, and a custom ocean-trained model is the planned next step.</li>
+              <li>Designed a proximity-based decision engine with a 7-tier priority system that blocks trash collection whenever marine life is detected near the target, using real-time bounding-box distance calculations.</li>
+              <li>Directed an AI-assisted development process and split the system into three modular layers (YOLOv8 detection, decision logic, OpenCV visualization) for maintainability and easy model swapping.</li>
+            </ul>
+          </dd>
+          <dt>Technologies</dt>
+          <dd><ul class="tags"><li>YOLOv8</li><li>OpenCV</li></ul></dd>
+        </dl>
+      </article>
+
+      <article class="card">
+        <h3>AI Fruit-Ripeness Classifier</h3>
+        <p class="meta">Samsung Innovation Campus Hackathon, Dec 2025. Team of 5.</p>
+        <dl>
+          <dt>Problem</dt>
+          <dd>Classify fruit ripeness from images: 5 fruit types across 3 ripeness states.</dd>
+          <dt>What I did</dt>
+          <dd>
+            <ul>
+              <li>Developed a Streamlit GUI with image upload, prediction results, confidence scores, and interactive Plotly visualizations across 15 classes.</li>
+              <li>Debugged the Streamlit application and classification logic during prototype testing, resolving image-rendering issues and incorrect fruit/ripeness predictions.</li>
+              <li>Built and presented the computer-vision prototype with a 5-member team.</li>
+            </ul>
+          </dd>
+          <dt>Technologies</dt>
+          <dd><ul class="tags"><li>Python</li><li>TensorFlow</li><li>Keras</li><li>MobileNetV2</li><li>Streamlit</li><li>Plotly</li></ul></dd>
+        </dl>
+      </article>
+
+      <article class="card">
+        <h3>Copa Airlines Data, Analytics &amp; AI Hackathon</h3>
+        <p class="meta">Ciudad del Saber, Panama, Oct 2025.</p>
+        <dl>
+          <dt>Problem</dt>
+          <dd>Extract insights from raw Copa Airlines data.</dd>
+          <dt>What I did</dt>
+          <dd>
+            <ul>
+              <li>Cleaned and prepared datasets, then built a small machine learning model in AWS SageMaker Canvas to extract insights from the data.</li>
+              <li>Structured a multi-stage data pipeline in Databricks using the Bronze-Silver-Gold medallion architecture to progressively clean and organize raw data.</li>
+            </ul>
+          </dd>
+          <dt>Technologies</dt>
+          <dd><ul class="tags"><li>Databricks</li><li>AWS SageMaker Canvas</li></ul></dd>
+        </dl>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <h3>Technical &amp; Research Intern, Wadiah Company</h3>
+      <p class="meta">Remote, Jul 2022 to Dec 2023</p>
+      <ul>
+        <li>Researched cryptocurrency mining hardware, evaluating cost, performance, and deployment feasibility to support simultaneous mining operations across 4-5 countries.</li>
+        <li>Built comparative analyses and technical diagrams to present findings and support technical decision-making.</li>
+        <li>Purchased and configured equipment for remote employees based in Panama, ensuring devices were ready for immediate use.</li>
+        <li>Delivered ongoing remote technical support, troubleshooting hardware and software issues for distributed employees.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <h3>Volunteer Math Tutor, Ayudinga Foundation</h3>
+      <p class="meta">Panama City, Panama, Jul 2025</p>
+      <ul>
+        <li>Tutored students in group settings, adapting explanations to different learning styles.</li>
+        <li>Prepared and adjusted lesson materials session to session to match each student's pace and comprehension.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="leadership">
+  <div class="wrap">
+    <h2>Leadership</h2>
+
+    <div class="entry">
+      <h3>Professional Development Director, SHPE USF</h3>
+      <ul>
+        <li>Maintain Daily Grind, a weekly database of internships and jobs for 12 engineering majors.</li>
+        <li>Review members' resumes.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <h3>Logistics &amp; Community Lead, Google Developer Group USF</h3>
+      <ul>
+        <li>Part of the team that organizes DevFest and HackUSF.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>
+        <h3>Languages</h3>
+        <ul class="tags"><li>Java</li><li>Python</li><li>C</li><li>C++</li><li>SQL</li><li>HTML/CSS</li><li>JSP</li><li>PHP</li></ul>
+      </div>
+      <div>
+        <h3>ML / Computer Vision</h3>
+        <ul class="tags"><li>TensorFlow</li><li>Keras</li><li>YOLOv8</li><li>OpenCV</li></ul>
+      </div>
+      <div>
+        <h3>Data / Cloud</h3>
+        <ul class="tags"><li>Databricks</li><li>AWS</li><li>AWS SageMaker Canvas</li><li>Amazon Comprehend</li><li>Plotly</li></ul>
+      </div>
+      <div>
+        <h3>Tools</h3>
+        <ul class="tags"><li>Git</li><li>Streamlit</li></ul>
+      </div>
+      <div>
+        <h3>Spoken languages</h3>
+        <ul class="tags"><li>Spanish (Fluent)</li><li>English (Fluent)</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>I am available for Summer 2027 internships. The fastest way to reach me is email.</p>
+    <div class="buttons">
+      <a class="btn primary" href="mailto:corralesdiego05@gmail.com">corralesdiego05@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/diegojcorrales/">LinkedIn</a>
+      <a class="btn" href="resume.pdf">Resume PDF</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">Diego Corrales, Tampa, FL</div>
+</footer>
+
+</body>
+</html>
